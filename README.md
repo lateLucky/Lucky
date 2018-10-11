@@ -1,3 +1,6 @@
+Your branch is up to date with 'origin/master'.
+
+
 ThinkPHP 5.0
 ===============
 
