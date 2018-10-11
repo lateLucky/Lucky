@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>添加</title>
+</head>
+<body>
+	<center>
+		<form action="{:url('Jotter/insert')}" method="post" enctype="multipart/form-data">
+			<table>
+				<tr>
+					<td>电脑名称</td>
+					<td><input type="text" name="name"></input></td>
+				</tr>
+				<tr>
+					<td>CPU</td>
+					<td><input type="text" name="CPU"></input></td>
+				</tr>
+				<tr>
+					<td>RAM</td>
+					<td><input type="text" name="RAM"></input></td>
+				</tr>
+				<tr>
+					<td>硬盘空间</td>
+					<td><input type="text" name="caliche"></input></td>
+				</tr>
+				<tr>
+					<td>图片</td>
+					<td><input type="file" name="image" /> <br> </td>
+				</tr>
+				<tr>
+					<td><input type="submit" value="提交"></input></td>
+					<td></td>
+				</tr>
+			</table>
+		</form>
+	</center>
+</body>
+</html>

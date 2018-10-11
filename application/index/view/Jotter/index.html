@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>简单操作</title>
+	<link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">
+	<script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<center>
+		<table border="1">
+			<tr>
+				<td>名称</td>
+				<td>CPU</td>
+				<td>RAM</td>
+				<td>硬盘空间</td>
+                <td>图片</td>
+				<td>操作</td>
+			</tr>
+			{volist name="data" id="v"}
+                <tr align="center">
+                    <td>{$v.name}</td>
+                    <td>{$v.CPU}</td>
+                    <td>{$v.RAM}</td>
+                    <td>{$v.caliche}</td>
+                    <td><img src="__STATIC__/../{$v.img}" width="70px;" height="80px;"></td>
+                    <td>
+                        <a href="updata?id={$v.id}">修改</a>
+                        <a href="delete?id={$v.id}">删除</a>
+                    </td>
+                </tr>
+            {/volist}
+            <tr>
+                <td colspan="6"><a href="{:url('add')}">添加商品</a></td>
+            </tr>
+            <tr>
+                <td colspan="9" >
+                    {$data->render()}
+                </td>
+            </tr>
+		</table>
+	</center>
+</body>
+</html>

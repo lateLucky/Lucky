@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>修改页面</title>
+</head>
+<body>
+	<center>
+		<form action="{:url('Jotter/save')}" method="post">
+			<table>
+			<input type="hidden" name="id" value="{$res['id']}"></input>
+				<tr>
+					<td>电脑名称</td>
+					<td><input type="text" name="name" value="{$res['name']}"></input></td>
+				</tr>
+				<tr>
+					<td>CPU</td>
+					<td><input type="text" name="CPU" value="{$res['CPU']}"></input></td>
+				</tr>
+				<tr>
+					<td>RAM</td>
+					<td><input type="text" name="RAM" value="{$res['RAM']}"></input></td>
+				</tr>
+				<tr>
+					<td>硬盘空间</td>
+					<td><input type="text" name="caliche" value="{$res['caliche']}"></input></td>
+				</tr>
+				<tr>
+					<td><input type="submit" value="修改"></input></td>
+					<td></td>
+				</tr>
+			</table>
+		</form>
+	</center>
+</body>
+</html>
